@@ -1,0 +1,30 @@
+{
+"Linea Descr":{
+	"Linea 1":"Grandes Tonalidades de gustos, para vapear a cualquier temperatura",
+	"Linea 2":"Muy Aromaticas, sabores definidos, para vapear a bajas temperaturas"
+	},
+"Linea Breve":{
+	"Linea 1":"Sabrosas",
+	"Linea 2":"Aromaticas"
+	},
+"Productos":{
+	"ProductosStock":{
+		"Linea 1":{"Frutilla":true,"Mango":true,"Melon":true,"Sandia":true,"Naranja":true,"Uva":true,"Frambuesa":true,"Frutos del bosque":true,"Vainilla":true,"Whisky":true,"Cafe":true},
+		"Linea 2":{"Chocolate":true,"Vainilla":true,"Anis":true,"Budin":true,"Lemonchelo":true,"Durazno":true,"Ananá":true,"Banana":true,"Coco":true,"Agua de Azahar":true,"Cereza":true,"Almendras":true,"Nuez":true,"Marraschino":true,"Menta":true}
+		},
+	"ProductosImg":{
+		"Linea 1":{"Frutilla":"frutillas.png","Mango":"mango.png","Melon":"melon.png","Sandia":"sandia.png","Naranja":"naranja.png","Uva":"uva.png","Frambuesa":"frambuesa.png","Frutos del bosque":"frutos del bosque.png","Vainilla":"vainilla.png","Whisky":"whisky.png","Cafe":"cafe.png"},
+		"Linea 2":{"Chocolate":"chocolate.png","Vainilla":"vainilla.png","Anis":"anis.png","Budin":"budin.png","Lemonchelo":"limon.png","Durazno":"durazno.png","Ananá":"anana.png","Banana":"banana.png","Coco":"coco.png","Agua de Azahar":"agua de azahar.png","Cereza":"cereza.png","Almendras":"almendras.png","Nuez":"nuez.png","Marraschino":"marraschino.png","Menta":"menta.png"}
+		},
+	"ProductosDescr":{
+		"Linea 1":{"Frutilla":"","Mango":"","Melon":"","Sandia":"","Naranja":"","Uva":"El mas vendido, fuerte gusto a uva con pequeños toques acaramelados, imperdible","Frambuesa":"Fuerte, para aquellos que quieren algo dulce con toques acidos de amargor intenso","Frutos del bosque":"","Vainilla":"Mantecoso, con gusto a suave, similar a una torta","Whisky":"Suave, para aquellos que buscan sabores discretos","Cafe":"Dulce, con gusto a cafe torrado, da fuertes notas de sabor"},
+		"Linea 2":{"Chocolate":"Una mezcla entre kinder y chocolate amargo, muy aromatico, para los amantes de algo bien dulce","Vainilla":"","Anis":"","Budin":"","Lemonchelo":"","Durazno":"","Ananá":"","Banana":"","Coco":"","Agua de Azahar":"","Cereza":"","Almendras":"","Nuez":"","Marraschino":"","Menta":""}
+		}
+	},
+"Adicionales":{
+	"AdicionalesStock":{"Mentolado":true,"Nicotina":true},
+	"AdicionalesImg":{"Mentolado":"Agente Congelante2.png","Nicotina":"nicotina_ByN.png"},
+	"AdicionalesDescr":{"Mentolado":"Un Toque de frescor, resalta los sabores frutales, no posee saborizantes, puede conbinarse con Vainilla","Nicotina":"Para superar la adiccion al cigarrillo, se recomienda no mas de 3mg en vaporizadores convencionales"}
+	},
+"Descr_Activada":false
+}

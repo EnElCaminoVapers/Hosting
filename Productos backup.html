@@ -1,0 +1,274 @@
+Linea 1<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bienvenidos a En El Camino Eliquids</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="Productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu_Overflow">
+            <div class="menu_Barra">
+                <img src="Data/Logo completo.png" class="menu_Logo">
+                <img src="Data/barra tribal doble.png" class="menu_Barra_Deco">
+                <p class="menu_Titulo">En el Camino Vapers</p>
+            </div>
+            <div class="menu_Bg">
+            <ul class="menu_Indice">
+                <li class="menu_Indice_Items">
+                    Inicio
+                </li>
+                <li class="menu_Indice_Items">
+                    Nuestros Productos
+                </li>
+                <li class="menu_Indice_Items">
+                    Contacto
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu_Responsive" hidden>
+        <div class="menu_Barra_Responsive">
+            <img src="Data/Logo completo.png" class="menu_Logo_Responsive">
+            <img src="Data/barra tribal.png" class="menu_Barra_Deco_Responsive">
+            <p class="menu_Titulo_Responsive">En el Camino Vapers</p>
+        </div>
+        <img src="Data\tres barras blancas.png" class="menu_Indice_Iconos_Responsive">
+        <ul class="menu_Indice_Responsive">
+            <li class="menu_Indice_Espacio_Responsive">
+                
+            </li>  
+            <li class="menu_Indice_Items_Responsive">
+                Inicio
+            </li>
+            <li class="menu_Indice_Items_Responsive">
+                Productos
+            </li>
+            <li class="menu_Indice_Items_Responsive">
+                Contacto
+            </li>
+        </ul>
+    </nav>
+<div class="contenedor_Todo">
+    <video src="Data/fuego2.mp4" class="contenedor_Fondo" muted autoplay loop></video>
+    <img src="Data/Logo completo.png" class="contenedor_Fondo_Logo">
+    <div class="contenedor_Posicion">
+    <div class="contenedor_Productos"></div>
+    <div class="contenedor_Linea_1">
+        <div class="Linea Presentacion">Linea de Productos 1</div>
+        <div class="Presentacion_Sabores">Sabores</div>
+        <div class="linea_1_Tipos">Frutales</div>
+        <div class="contenedor_Linea_1_Sabores">
+            <div class="contenedor_Linea_1_Sabores_Contenedor">
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\frutillas.png">
+                        <img class="productos_Imagenes_Agotado" src="Data Productos 0\agotado.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Frutilla</div>
+                    <div class="marco_Linea_1_Descripcion"></div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\mango.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Mango</div>
+                    <div class="marco_Linea_1_Descripcion"></div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\melon.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Melon</div>
+                    <div class="marco_Linea_1_Descripcion"></div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\sandia.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Sandia</div>
+                    <div class="marco_Linea_1_Descripcion"></div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\naranja.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Naranja</div>
+                    <div class="marco_Linea_1_Descripcion"></div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\uva.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Uva</div>
+                    <div class="marco_Linea_1_Descripcion">El mas vendido, fuerte gusto a uva con toques acaramelados, imperdible</div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\frambuesa.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Frambuesa</div>
+                    <div class="marco_Linea_1_Descripcion">Fuerte, para aquellos que quieren algo dulce con toques acidos de amargor intenso</div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\frutos del bosque.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Frutos del Bosque</div>
+                    <div class="marco_Linea_1_Descripcion"></div>
+                </div>
+            </div>    
+        </div>
+        <div class="linea_1_Tipos"> No Frutales</div>
+        <div class="contenedor_Linea_1_Sabores">
+            <div class="contenedor_Linea_1_Sabores_Contenedor">
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\cafe.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Cafe</div>
+                    <div class="marco_Linea_1_Descripcion">Dulce, con gusto a cafe torrado, da fuertes notas de sabor</div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\vainilla.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Vainilla</div>
+                    <div class="marco_Linea_1_Descripcion">Mantecoso, con gusto a suave, similar a una torta</div>
+                </div>
+                <div class="marco_Linea_1">
+                    <div class="marco_Productos_Imagenes">
+                        <img class="productos_Imagenes" src="Data Productos\whisky.png">
+                    </div>
+                    <div class="marco_Linea_1_Titulo">Whisky</div>
+                    <div class="marco_Linea_1_Descripcion">Suave, para aquellos que buscan sabores discretos</div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_Precios">Precios</div>
+        <div class="contenedor_Calculadora">
+            <div class="contenedor_Calculadora_Aniadir">
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <label for="cant_Calc" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Cantidad</label>
+                    <input class="contenedor_Calculadora_Aniadir_Cantidad" id="cant_Calc" type="number" value="0" min="0">
+                    <input class="contenedor_Calculadora_Aniadir_Envase" type="checkbox" id="cboxEnv" checked>
+                    <label for="cboxEnv" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Añadir Envase 60ml</label>
+                    <div class="contenedor_Calculadora_Aniadir_Ml_Div" id="cant_Ml_Div">
+                        <input class="contenedor_Calculadora_Aniadir_Ml" id="cant_Ml" type="number" value="0" min="0">
+                        <label for="cant_Ml" id="cant_Ml_Label" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">ml</label>
+                    </div>
+                    <input class="contenedor_Calculadora_Aniadir_Men_Check" id="cboxMen" type="checkbox" value="Mentolado">
+                    <label for="cboxMen" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Mentolado</label>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedor" id="men_mg"> 
+                    <ul class="contenedor_Calculadora_Aniadir_Ul contenedor_Menta">
+                        <li class="select_ment_1 contenedor_Calculadora_Aniadir_Li">0.5%</li>
+                        <li class="select_ment_2 contenedor_Calculadora_Aniadir_Li">1.0%</li>
+                        <li class="select_ment_3 contenedor_Calculadora_Aniadir_Li">2.0%</li>
+                    </ul>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <input class="contenedor_Calculadora_Aniadir_Nic_Check" id="cboxNic" type="checkbox" value="Nicotina">
+                    <label for="cboxNic" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Nicotina</label>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedor" id="nico_mg"> 
+                    <ul class="contenedor_Calculadora_Aniadir_Ul contenedor_Nicotina">
+                        <li class="select_nico_1 contenedor_Calculadora_Aniadir_Li">1.5mg</li>
+                        <li class="select_nico_2 contenedor_Calculadora_Aniadir_Li">3.0mg</li>
+                        <li class="select_nico_3 contenedor_Calculadora_Aniadir_Li">6.0mg</li>
+                    </ul>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <button class="contenedor_Calculadora_Aniadir_Aniadir">Añadir</button>
+                </div>
+            </div>
+            <div class="contenedor_Calculadora_Aniadidos">
+                <input type="text" list="listaFormatosSabores" class="selector_Sabores" placeholder="Añadir Sabores">
+                <datalist id="listaFormatosSabores" class="id_Sabores">
+                    <option value="Cafe">Linea 1 Productos</option>
+                    <option value="Vainilla">Linea 1 Productos</option>
+                    <option value="Whisky">Linea 1 Productos</option>
+                    <option value="Frutilla">Linea 1 Productos</option>
+                    <option value="Mango">Linea 1 Productos</option>
+                    <option value="Melon">Linea 1 Productos</option>
+                    <option value="Sandia">Linea 1 Productos</option>
+                    <option value="Naranja">Linea 1 Productos</option>
+                    <option value="Uva">Linea 1 Productos</option>
+                    <option value="Frambuesa">Linea 1 Productos</option>
+                    <option value="Frutos del Bosque">Linea 1 Productos</option>
+                    
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                    <option value="">Linea 2 Productos</option>
+                </datalist>
+                <select autofocus name>
+                    <optgroup label="primera-opcion">
+                        <option>opcion 1</option>
+                        <option>opcion 2</option>
+                        <option>opcion 3</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="contenedor_Precios_Detalles">
+                17$/ml a 12$/ml
+            </div>
+            <div class="calculadora_Envios">
+                <div class="seccion_Calculadora">
+                    <div class="check_Envios_Container">
+                        <input type="checkbox" id="check_Dir" checked>
+                        <label for="check_Dir" class="envio_Check_Lbl">Utilizar ubicacion actual</label>
+                    </div>
+                    <input type="text" class="texto_Direccion" placeholder="Escriba su dirección">
+                    <button class="boton_Ubi">Calcular Envio</button>
+                </div>
+                <div id="map"></div>
+                <div class="mapa_Resultados_Multiples_Items_Descr">Su Busqueda Tiro Varios Resultados</div>
+                <div class="mapa_Resultados_Multiples"></div>
+                <p class="mapa_Descripcion">Si su ubicacion se encuentra en el circulo Azul puede Recibir su Pedido, si se encuentra en el Rojo puede llegar dependiendo de la cantidad de cuadras, si esta fuera del circulo no llega el envio</p>
+                <div class="mapa_Descripcion_Detalles_Contenedor"><p class="mapa_Descripcion_Detalles">Si se encuentra en una zona </p><p class="resaltar_rojo">Peligrosa </p><p class="resaltar_linea">Aclare</p> <p class="mapa_Descripcion_Detalles"> Podemos Acordar un Encuentro en un punto medio, </p><p class="resaltar_linea_rojo">Si no aclaran se recibira un bloqueo</p></div>
+            </div>
+            <div class="contenedor_Resultado_Envio">
+                <div class="descripcion_Tiempo">Tiempo(Aprox.)</div>
+                <div class="tiempo_Resultado">0hs</div>
+                <div class="descripcion_Envio">Costo(Envio)</div>
+                <div class="resultado_Envio">0$</div>
+            </div>
+            <div class="contenedor_Resultado_Error">Su direccion supera las X cuadras</div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="productosStock.js"></script>
+<script type="text/javascript" src="scriptDolar.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="Productos.js"></script>
+<script type="text/javascript" src="mapa.js"></script>
+</html>

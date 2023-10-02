@@ -1,0 +1,5 @@
+git init 
+git add . 
+git commit -m "mi primer proyecto web"  
+git remote add origin https://github.com/Beguelin/Proyecto-Pagina.git
+git push origin master  

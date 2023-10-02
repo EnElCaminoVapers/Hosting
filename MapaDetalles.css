@@ -1,0 +1,153 @@
+#map {
+    width: 100%;
+    height: 10vh;
+    margin: 0 auto;
+    border-radius: 15px; 
+    }
+.mapa_Descripcion{
+    display: block;
+    color: white;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+.mapa_Descripcion_Detalles_Contenedor{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mapa_Descripcion_Detalles{
+    display: inline;
+    color: white;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+.mapa_Resultados_Multiples_Items:hover{
+    background-color: brown;
+}
+.mapa_Resultados_Multiples_Items:active{
+    background-color: purple;
+}
+.mapa_Resultados_Multiples_Items_Descr{
+    display: none;
+    margin: 0 auto;
+    color: whitesmoke;
+    width: fit-content;
+    padding: 2px;
+}
+.mapa_Resultados_Multiples{
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+.mapa_Resultados_Multiples_Items{
+    display: inline-block;
+    margin: 0 auto;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: whitesmoke;
+    text-align: center;
+}
+.contenedor_Resultado_Envio{
+    display: none;
+    color: whitesmoke ;
+    font-family: 'Pattaya', sans-serif;
+    font-size: large;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color:rgba(255, 255, 255, 0.5);
+}
+.check_Envios_Container{
+    width: auto;
+    margin-right: 5px;
+}
+.boton_Ubi{
+    padding: 0;
+    right: 0;
+}
+.texto_Direccion{
+    display: inline-block;
+    background-color: transparent;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.Titulo_Envios{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-family: 'Pattaya', sans-serif;
+    font-size: xx-large;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.titulo_Check{
+    display: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    float: right;
+    color: whitesmoke;
+    margin: 0 5px;
+}
+.pasar_A_Buscar{
+    text-align: center;
+}
+.Detalles_Pasos{
+    font-size: xx-large;
+    font-weight: bolder;
+    float: left;
+    color: whitesmoke;
+    margin: 0 10px;
+}
+.contenedor_Datos_Adicionales{
+    color: whitesmoke ;
+    font-family: 'Pattaya', sans-serif;
+    font-size: large;
+    width: fit-content;
+    height: fit-content;
+    margin: 2px auto;
+    border-style: solid;
+    border-radius: 3px;
+    border-color:rgba(255, 255, 255, 0.5);
+}
+.seccion_Calculadora{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+.seccion_Datos_Calculadora{
+    width: fit-content;
+    height: fit-content;
+    margin: 2px auto;
+    border-style: solid;
+    border-radius: 3px;
+    border-color:rgba(255, 255, 255, 0.5);
+
+    background-color: rgba(0, 0, 0, 1);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javascript" src="html2pdf.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="PDFAIMPRIMIR">
+            asd
+        </div>
+        <script>
+            console.log("anda");
+        var elementos213 = document.querySelector(".PDFAIMPRIMIR")
+        var opt = {
+            margin:       1,
+            filename:     'myfile.pdf',
+            image:        { type: 'png'},
+            html2canvas:  { scale: 1 },
+            jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+};
+
+// New Promise-based usage:
+html2pdf().from(elementos213).set(opt).save();
+//html2pdf(elementos213, opt);
+        </script>
+    </body>
+</html>

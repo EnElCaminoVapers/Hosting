@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bienvenidos a En El Camino Vapers Eliquids</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="Productos.css">
+    <link rel="stylesheet" type="text/css" href="ProductosContenedor.css">
+    <link rel="stylesheet" type="text/css" href="ProductosCalculadora.css">
+    <link rel="stylesheet" type="text/css" href="ProductosRes.css">
+    <link rel="stylesheet" type="text/css" href="MapaDetalles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu_Barra">
+            <img src="Data/Logo completo.png" class="menu_Logo">
+            <img src="Data/barra tribal doble.png" class="menu_Barra_Deco">
+            <p class="menu_Titulo">En el Camino Vapers</p>
+        </div>
+        <div class="menu_Bg">
+        <ul class="menu_Indice">
+            <li class="menu_Indice_Items">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="menu_Indice_Items">
+                <a href="Productos.html">Nuestros Productos</a>
+            </li>
+            <li class="menu_Indice_Items">
+                <a>Contacto</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <nav class="menu_Responsive" hidden>
+        <div class="menu_Barra_Responsive">
+            <img src="Data/Logo completo.png" class="menu_Logo_Responsive">
+            <img src="Data/barra tribal.png" class="menu_Barra_Deco_Responsive">
+            <p class="menu_Titulo_Responsive">En el Camino Vapers</p>
+        </div>
+        <img src="Data\tres barras blancas.png" class="menu_Indice_Iconos_Responsive">
+        <ul class="menu_Indice_Responsive">
+            <li class="menu_Indice_Espacio_Responsive">
+                
+            </li>  
+            <li class="menu_Indice_Items_Responsive">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="menu_Indice_Items_Responsive">
+                <a href="Productos.html">Productos</a>
+            </li>
+            <li class="menu_Indice_Items_Responsive">
+                <a>Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contenedor_Fondo_Visual">
+        <video src="Data/fuego2.mp4" class="contenedor_Fondo" muted autoplay loop></video>
+        <img src="Data/Logo completo.png" class="contenedor_Fondo_Logo">
+    </div>
+<div class="contenedor_Todo">
+    <div class="espacio_Body"></div>
+    <ul class="contenedor_Productos"></ul>
+    <ul class="seleccionar_Indice_Linea"></ul>
+    <div class="contenedor_Adicionales"></div>
+    <div class="contenedor_Precios">Precios</div>
+        <div class="contenedor_Calculadora">
+
+
+
+
+            <div class="calculadora_Envios">
+                <div class="Titulo_Envios"><div class="Detalles_Pasos">1º</div>Calcular Envio/Pasar a Buscar<div class="titulo_Check">✓</div></div>
+                <div class="pasar_A_Buscar">
+                    <input type="checkbox" id="check_A_B">
+                    <label for="check_A_B" class="envio_Check_Lbl">Marque si desea buscar su Producto</label>
+                </div>
+                <div class="seccion_Mapa">
+                <div class="seccion_Calculadora">
+                    <div class="check_Envios_Container">
+                        <input type="checkbox" id="check_Dir">
+                        <label for="check_Dir" class="envio_Check_Lbl">Utilizar ubicacion actual</label>
+                    </div>
+                </div>
+                <div class="seccion_Datos_Calculadora">
+                    <div style="display: block; margin: auto 0;">
+                    <input type="text" class="texto_Direccion" placeholder="Escriba su dirección">
+                    <button class="boton_Ubi">Calcular Envio</button>
+                    </div>
+                    <div class="contenedor_Datos_Adicionales"><input type="radio" id="esCasa" name="propiedad" required><label for="esCasa">Casa</label><input type="radio" id="esDPTO" name="propiedad" required><label for="esDPTO">Departamento</label><input type="text" id="detallesDPTO" style="display: none; width: 20px;"><input type="radio" id="puntoIntermedio" name="propiedad" required><label for="puntoIntermedio">Punto Intermedio</label></div>
+                </div>
+                <span id="alerta1" style="color: red; display: none; text-align: center; font-weight: bolder; "><img src="\Data Productos 0\Advertencia.gif" style="width: 25px; margin: auto 0; display: inline-block;"><p style=" display: inline-block; font-size: larger; margin: 0; padding: 0; vertical-align: top;">Aclare el método de envio</p><img src="\Data Productos 0\Advertencia.gif" style="width: 25px; margin: auto 0; display: inline-block;"></span>
+                <span id="alerta2" style="color: red; display: none; text-align: center; font-weight: bolder; "><img src="\Data Productos 0\Advertencia.gif" style="width: 25px; margin: auto 0; display: inline-block;"><p style=" display: inline-block; font-size: larger; margin: 0; padding: 0; vertical-align: top;">Especifique si es una casa departamento o punto medio</p><img src="\Data Productos 0\Advertencia.gif" style="width: 25px; margin: auto 0; display: inline-block;"></span>
+                <span id="alerta3" style="color: red; display: none; text-align: center; font-weight: bolder; "><img src="\Data Productos 0\Advertencia.gif" style="width: 25px; margin: auto 0; display: inline-block;"><p style=" display: inline-block; font-size: larger; margin: 0; padding: 0; vertical-align: top;">Especifique el piso y/o el numero de departamento</p><img src="\Data Productos 0\Advertencia.gif" style="width: 25px; margin: auto 0; display: inline-block;"></span>
+                <div id="map"></div>
+                <div class="mapa_Resultados_Multiples_Items_Descr">Su Busqueda Tiro Varios Resultados</div>
+                <div class="mapa_Resultados_Multiples"></div>
+                <p class="mapa_Descripcion">Si su ubicacion se encuentra en el circulo Azul puede Recibir su Pedido, si se encuentra en el Rojo puede llegar dependiendo de cuantos kilometros sean, si esta fuera del circulo no llega el envio</p>
+                <div class="mapa_Descripcion_Detalles_Contenedor"><p class="mapa_Descripcion_Detalles">Si se encuentra en una zona o el envio pasa por una zona </p><p class="resaltar_rojo">Peligrosa </p><p class="resaltar_linea">Aclare</p> <p class="mapa_Descripcion_Detalles"> Podemos Acordar un Encuentro en un punto medio, o hacer una ruta </p><p class="resaltar_linea">Alternativa</p>&nbsp;<p class="resaltar_linea_rojo">Si no aclaran se recibira un bloqueo</p></div>
+                </div>
+            </div>
+            <div class="contenedor_Resultado_Envio"></div>
+
+
+
+
+
+
+            <div class="contenedor_Calculadora_Aniadir">
+                <div class="contenedor_Calculadora_Titulo"><div class="Detalles_Pasos">2º</div>Añadir Productos<div class="titulo_Check_Calc">✓</div></div>
+                <div class="Desc_Aniadir_Con_Detalles">A mayor cantidad de envases o "ml" mayor será el descuento</div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <label for="cant_Calc" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Cantidad</label>
+                    <input class="contenedor_Calculadora_Aniadir_Cantidad" id="cant_Calc" type="number" value="0" min="0">
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <input class="contenedor_Calculadora_Aniadir_Envase" type="checkbox" id="cboxEnv" checked>
+                    <label for="cboxEnv" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Añadir Envase 60ml</label>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <div class="contenedor_Calculadora_Aniadir_Ml_Div" id="cant_Ml_Div">
+                        <label for="cant_Ml" id="cant_Ml_Label" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Envase</label>
+                        <input class="contenedor_Calculadora_Aniadir_Ml" id="cant_Ml" type="number" value="5" min="5" step="5">
+                        <label for="cant_Ml" id="cant_Ml_Label" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">ml</label>
+                    </div>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <input class="contenedor_Calculadora_Aniadir_Men_Check" id="cboxMen" type="checkbox" value="Mentolado">
+                    <label for="cboxMen" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Mentolado</label>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <div class="contenedor_Calculadora_Aniadir_Contenedor" id="men_mg"> 
+                        <ul class="contenedor_Calculadora_Aniadir_Ul contenedor_Menta">
+                            <li class="select_ment_1 contenedor_Calculadora_Aniadir_Li">0.5%</li>
+                            <li class="select_ment_2 contenedor_Calculadora_Aniadir_Li">1.0%</li>
+                            <li class="select_ment_3 contenedor_Calculadora_Aniadir_Li">2.0%</li>
+                            <li class="select_ment_4 contenedor_Calculadora_Aniadir_Li">4.0%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <input class="contenedor_Calculadora_Aniadir_Nic_Check" id="cboxNic" type="checkbox" value="Nicotina">
+                    <label for="cboxNic" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Nicotina</label>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <div class="contenedor_Calculadora_Aniadir_Contenedor" id="nico_mg"> 
+                        <ul class="contenedor_Calculadora_Aniadir_Ul contenedor_Nicotina">
+                            <li class="select_nico_1 contenedor_Calculadora_Aniadir_Li">1.5mg</li>
+                            <li class="select_nico_2 contenedor_Calculadora_Aniadir_Li">3.0mg</li>
+                            <li class="select_nico_3 contenedor_Calculadora_Aniadir_Li">6.0mg</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contenedor_Calculadora_Aniadir_Contenedores">
+                    <div class="contenedor_Calculadora_Aniadir_Espacio">.</div>
+                    <input class="contenedor_Calculadora_Aniadir_Doble_Concentrado" id="cboxDC" type="checkbox" value="DobleConcentrado">
+                    <label for="cboxDC" class="contenedor_Calculadora_Aniadir_Descr_Adicionales">Doble Concentrado</label>
+                </div>
+            </div>
+            <div class="contenedor_Total_Sabores">
+            <div class="contenedor_Calculadora_Aniadir_Contenedores2">
+                <input type="text" list="listaFormatosSabores" class="selector_Sabores" placeholder="Añadir Sabores">
+                <datalist id="listaFormatosSabores" class="id_Sabores">
+                </datalist>
+                <button class="boton_Aniadir_Sabores">+</button>
+            </div>
+            <div class="contenedor_Sabores_Aniadidos"></div>
+            </div>
+            <div class="contenedor_Calculadora_Boton"><button class="contenedor_Calculadora_Aniadir_Aniadir">Añadir</button></div>
+            <div class="contenedor_Precios_Detalles">
+            </div>
+            
+            <div class="Contenedor_Total_Liq">
+                <div class="Contenedor_Total_Liq_titulo"><div class="Detalles_Pasos">3º</div>Total<div class="Deco_Liq_Titulo">✓</div></div>
+                <div class="Contenedor_Total_Liq_Tot"></div>
+                <div class="Contenedor_Total_Liq_Desc"></div>
+                <div class="Contenedor_Total_Liq_Liq"></div>
+                <div class="Contenedor_Total_Liq_Envio"></div>
+                <div class="Contenedor_Total_Liq_Res"></div>
+            </div>
+            <div class="enviar_Whatsapp">
+                <div class="fondo_Whatsapp">
+                <div class="Contenedor_Total_Liq_titulo" style="font-family: 'Pattaya', sans-serif;"><div class="Detalles_Pasos">4º</div>Enviar Por Whatsapp<div class="Deco_Liq_Titulo">✓</div></div>
+                <div class="base_Whatsapp">
+                    <img class="img_Whatsapp" src="\Data Productos 0\Whatsapp_Logo.png" width="50" height="50">
+                    <button class="botone_Whatsapp">Enviar Pedido Por Whatsapp</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="productosStock.js"></script>
+<script type="text/javascript" src="scriptDolar.js"></script>
+<script type="text/javascript" src="ProductosAñadirSabores.js"></script>
+<script type="text/javascript" src="Productos_Barra_Detalles.js"></script>
+<script type="text/javascript" src="ProductosCalcular.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="Productos.js"></script>
+<script type="text/javascript" src="mapa.js"></script>
+<script type="text/javascript" src="html2pdf.bundle.min.js"></script>
+<script type="text/javascript" src="CrearPDF.js"></script>
+</html>

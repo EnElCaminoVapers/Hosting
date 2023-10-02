@@ -1,0 +1,82 @@
+
+.detalles_Aniadidos{
+    background-color: rgba(30, 0, 0, 0.7);
+    border-radius: 40px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 5px;
+}
+.boton_Aniadidos_Tot_Close{
+    float: right;
+    margin: 15px;
+}
+.detalles_Aniadidos_Env{
+    margin-left: 15px;
+    font-size: large;
+    color: darkorchid;
+    font-weight: bolder;
+}
+.detalles_Aniadidos_Ml{
+    margin-left: 15px;
+    font-size: large;
+    color: chocolate;
+    font-weight: bolder;
+}
+.detalles_Aniadidos_Sab{
+    height: fit-content;
+    margin-left: 7.5%;
+}
+.detalles_Sabores_U{
+    color: brown;
+    display: inline-block;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+.detalles_Sabores_UP{
+    display: inline-block;
+    margin: 0;
+    color: red;
+    font-weight: bolder;
+}
+.detalles_Precio_Ml_Unitario_Contenedor{
+    text-align: left;
+    margin-left: 10%;
+    display: block;
+}
+.detalles_Precio_Ml_Unitario{
+    display: inline-block;
+    color: whitesmoke;
+}
+.detalles_Precio_Ment_Unitario{
+    display: inline-block;
+    color: whitesmoke;
+}
+.detalles_Precio_Nico_Unitario{
+    display: inline-block;
+    color: whitesmoke;
+}
+.detalles_Precio_Total_Uni{
+    color: whitesmoke;
+    text-align: right;
+    font-weight: bold;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+.detalles_Precio_Ml_Frasco{
+    color:whitesmoke;
+    font-weight: bold;
+    text-align: right;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+.detalles_Precio_Total{
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: right;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}

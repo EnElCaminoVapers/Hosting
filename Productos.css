@@ -1,0 +1,319 @@
+.espacio_Body{
+    display: block;
+    position: initial;
+    height: 73px;
+    background-color: transparent;
+}
+
+
+.contenedor_Todo{
+    width: 100%;
+    height: 100%;
+}
+.productos_Imagenes_Agotado{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 150px;
+    
+}
+.contenedor_Posicion{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.productos_Imagenes{
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 0;
+}
+.contenedor_Linea_1{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 75%;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+}
+.contenedor_Linea_1_Sabores{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.contenedor_Linea_1_Sabores_Contenedor{
+    display: none;
+    text-align: center;
+}
+.linea_1_Tipos{
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+}
+.marco_Linea_1{
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.marco_Linea_1_Titulo{
+    max-width: 150px;
+    border-style: solid;
+    border-bottom: 0px;
+    border-color: whitesmoke;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.marco_Linea_1_Descripcion{
+    max-width: 150px;
+    border-style: solid;
+    border-color: whitesmoke;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+@media (max-aspect-ratio: 1.90/1) {
+    .contenedor_Fondo{
+        position: fixed;
+        display: block;
+        height: 100%;
+    }
+    body{
+        background-color: rgb(15, 15, 15);
+    }
+}
+
+.contenedor_Calculadora{
+    width: 100%;
+}
+.contenedor_Calculadora_Aniadir_Contenedores{
+    display: inline-block;
+    vertical-align: middle;
+}
+.contenedor_Calculadora_Aniadir{
+    height: fit-content;
+    /*display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    margin: 0;*/
+    text-align: center;
+    background-color: rgba(119, 0, 255, 0.63);
+    border-radius: 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 5px 5px 0 5px;
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius:0px;
+    margin: auto;
+    padding: 10px;
+    vertical-align: top;
+}
+.contenedor_Calculadora_Aniadir_Espacio{
+    display: inline-block;
+    padding: 7px 0px;
+    width: 1px;
+    color: rgba(255, 255, 255, 0);
+}
+.contenedor_Calculadora_Aniadir_Descr_Adicionales{
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+    font-family: 'Pattaya', sans-serif;
+}
+.contenedor_Calculadora_Aniadir_Cantidad{
+    align-items: center;
+    width: 30px;
+    height: 10px;
+    font-family: 'Pattaya', sans-serif;
+}
+.contenedor_Calculadora_Aniadir_Ml{
+    width: 38px;
+    height: 10px;
+    font-family: 'Pattaya', sans-serif;
+}
+.contenedor_Calculadora_Aniadir_Ml_Div{
+    align-items: center;
+    display: inline-block;
+    background-color: blue;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contenedor_Calculadora_Aniadir_Envase:checked ~ .contenedor_Calculadora_Aniadir_Ml_Div {
+    display: none;
+}
+.contenedor_Calculadora_Aniadir_Contenedor{
+    margin: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    align-items: left;
+}
+
+.contenedor_Calculadora_Aniadir_Ul{
+    margin: 0;
+    padding: 8px 0px 0px 5px;
+    list-style: none;
+}
+.contenedor_Calculadora_Aniadir_Li{
+    margin: 0;
+    color: white;
+    list-style: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent;
+    border-width: 1.5px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.contenedor_Calculadora_Aniadir_Li:hover{
+    background-color: purple;
+}
+
+.envio_Check_Lbl{
+    margin: 0 auto;
+    display: inline-block;
+    color: white;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+.calculadora_Envios{
+    margin: 0 auto;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#check_Dir{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.contenedor_Calculadora_Aniadir_Aniadir{
+    font-family: 'Pattaya', sans-serif;
+}
+.boton_Ubi{
+    font-family: 'Pattaya', sans-serif;
+}
+
+.resaltar_rojo{
+    display: inline;
+    color: red;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+
+}
+.resaltar_linea{
+    display: inline;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+.resaltar_linea_rojo{
+    display: inline;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+.contenedor_Calculadora_Aniadidos{
+    width: 90%;
+    margin: 0 15px 0 auto;
+}
+.contenedor_Calculadora_Aniadidos_Base{
+    display: block;
+    background-color: red;
+    color: blue;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+}
+.contenedor_Calculadora_Aniadidos_Base_Cerrar{
+    background-color: transparent;
+    color: blue;
+    display: inline-block;
+    margin: fit-content;
+    height: fit-content;
+    vertical-align: top;
+    border-radius: 30px;
+    border-style: hidden;
+    padding: 0;
+    top: 0;
+}
+
+
+
+.contenedor_Linea_1{
+    position: relative;
+}
+.contenedor_Precios{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.contenedor_Calculadora{
+    position: relative;
+}
+/*.boton_Añadir_Sabores{
+    border-style: none;
+    background-color: transparent;
+}
+.boton_Eliminar_Sabores{
+    border-style: none;
+    background-color: transparent;
+}*/
+
+.contenedor_Calculadora_Titulo{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-family: 'Pattaya', sans-serif;
+    font-size: xx-large;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.enviar_Whatsapp{
+    display: none;
+    width: 100%;
+    margin: 0;
+}
+.fondo_Whatsapp{
+    background-color: rgba(0, 125, 0, 0.7);
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 5px;
+}
+.base_Whatsapp{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.botone_Whatsapp{
+    display: inline;
+    top: 0;
+    font-size: larger;
+    vertical-align: middle;
+    margin: auto 0;
+    padding: 10px 0;
+    font-family: 'Pattaya', sans-serif;
+    color: green;
+    border-radius: 10px;
+}
+.img_Whatsapp{
+    vertical-align: middle;
+
+}

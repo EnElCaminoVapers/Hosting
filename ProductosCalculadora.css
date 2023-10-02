@@ -1,0 +1,149 @@
+.Desc_Aniadir_Con_Detalles{
+    font-family: 'Pattaya', sans-serif;
+    font-size: larger;
+    color: gold;
+    text-decoration: underline;
+}
+
+.sabores_Aniadidos{
+    color: whitesmoke;
+    display: inline-block;
+}
+.saboresAniadidos{
+    display: inline-block;
+    background-color: purple;
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+.saboresAniadidosTodo{
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.sabores_AniadidosDet{
+    display: inline-block;
+    text-align: right;
+}
+
+.contenedor_Calculadora_Aniadir_Contenedores2{
+    margin: 0 auto;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 125, 0, 0.7);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.contenedor_Sabores_Aniadidos{
+    display: inline-block;
+    position: relative;
+}
+.contenedor_Calculadora_Boton{
+    border-radius: 40px;
+    border-top-right-radius:0px;
+    border-top-left-radius:0px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 0px 5px 5px 5px;
+    background-color: rgba(119, 0, 255, 0.63);
+    
+}
+.contenedor_Calculadora_Aniadir_Aniadir{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor_Total_Sabores{
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 0px 5px 0 5px;
+    background-color: rgba(119, 0, 255, 0.63);
+    display: block;
+    text-align: center;
+}
+.contenedor_Calculadora_Aniadir_Contenedores{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: auto;
+}
+.sabores_PorcentajeDet{
+    margin-left: 5px;
+    font-family: 'Pattaya', sans-serif;
+}
+.selector_Sabores{
+    font-family: 'Pattaya', sans-serif;
+}
+.titulo_Check_Calc{
+    display: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    float: right;
+    color: whitesmoke;
+    margin: 0 5px;
+}
+.Contenedor_Total_Liq{
+    box-sizing: border-box;
+    display: none;
+    margin: auto;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border-width: 5px;
+    font-family: 'Pattaya', sans-serif;
+    background-color: rgba(65, 105, 225, 0.8);
+    text-align: center;
+
+}
+.Contenedor_Total_Liq_titulo{
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    font-size: xx-large;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.Contenedor_Total_Liq_Tot{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    color: burlywood;
+}
+.Contenedor_Total_Liq_Desc{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    color: blueviolet;
+}
+.Contenedor_Total_Liq_Liq{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.Contenedor_Total_Liq_Envio{
+    text-align: center;
+    color: white;
+}
+.Contenedor_Total_Liq_Res{
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.Deco_Liq_Titulo{
+    float: right;
+    margin: 0 5px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}

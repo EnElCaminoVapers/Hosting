@@ -1,0 +1,510 @@
+body{
+    margin: 0;
+    background-color: transparent;
+}
+.menu{
+    position: relative;
+    width:100vw;
+    height: 75px;
+    background-color: transparent;
+    overflow:hidden;
+}
+.menu_Indice_Responsive li a{
+    text-decoration: none;
+}
+.menu_Indice li a{
+    text-decoration: none;
+}
+.contenedor_Todo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contenedor_Todo audio{
+    width: 100%;
+}
+.menu_Overflow{
+    position: absolute;
+    top: 0;
+    height: 66px;
+    width: calc(100vw - 30px);
+    overflow: hidden;
+}
+.menu_Barra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+.menu_Titulo{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 140px;
+    margin: 0;
+    padding: 0;
+    font-size: 64px;
+    width: 700px;
+    color: whitesmoke;
+    font-family: 'Pattaya', sans-serif;
+    -webkit-text-stroke: 2px gray;
+    z-index: 20;
+    animation-name: deslizar-texto;
+    animation-duration:6s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes deslizar-texto {
+    0%{
+        left: -480px;
+    }
+    100%{
+        left: calc(100vw - 250px * 2);
+    }
+}
+
+.menu_Logo{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    z-index: 40;
+    height: 73px;
+}
+.menu_Barra_Deco{
+    height: 73px ;
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    z-index: 30;
+    animation-name: deslizar-barra;
+    animation-duration:12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes deslizar-barra {
+    0%{
+        left: 0vw;
+        top: 0px;
+        height: 66px;
+        filter: blur(5px);
+    }
+    12.5%{
+        left: -100vw;
+        filter: blur(5px);
+        top: 0px;
+        height: 66px;
+    }
+    25%{
+        top:0px;
+        height: 66px;
+        left: -0vw;
+        filter: blur(5px);
+    }
+    37.5%{
+        left: -100vw;
+        filter: blur(5px);
+        top: 0px;
+        height: 66px;
+    }
+    50%{
+        left: 0vw;
+        top: 0px;
+        height: 66px;
+        filter: blur(5px);
+    }
+    62.5%{
+        left: -100vw;
+        top: 0px;
+        height: 66px;
+        filter: blur(5px);
+    }
+    75%{
+        left: 0;
+        top: 0px;
+        height: 66px;
+        filter: blur(5px);
+    }
+    87.5%{
+        left: -100vw;
+        top:0px;
+        height:66px;
+        filter: blur(5px);
+    }
+    100%{
+        left: 0;
+        top: 0px;
+        height: 66px;
+        filter: blur(5px);
+    }
+}
+.menu_Bg{
+    background-color: black;
+    position: absolute;
+    height: 75px;
+    width: 510px;
+    left: calc(100% - 510px);
+    z-index: 40;
+}
+.menu_Indice{
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+.menu_Indice_Items{
+    background-color: red;
+    display: inline-block;
+    list-style: none;
+    border-width: thin;
+    border-style: solid;
+    border-width: 3px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Pattaya', sans-serif;
+    border-style: solid;
+        border-color: whitesmoke;
+}
+.menu_Indice_Items:hover{
+    background-color: brown;
+}
+.contenedor_Fondo_Visual{
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.contenedor_Fondo{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    height: max-content;
+    z-index: 0;
+    object-fit: cover;
+}
+.contenedor_Fondo_Logo{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    animation: agrandar-logo2 8s, cambiar-color 6s infinite;
+    top:10%;
+    bottom: 10%;
+}
+@keyframes cambiar-color {
+    0%{
+        filter: none;
+    }
+    50%{
+        filter: invert();
+    }
+    100%{
+        filter: none;
+    }
+}
+@keyframes agrandar-logo2 {
+    0%{
+        left: 37.5%;
+        right: 37.5%;
+        bottom: 37.5%;
+        top: 37.5%;
+        width: 25%;
+    }
+    100%{
+        left: 0;
+        right: 0;
+        top:10%;
+        bottom: 10%;
+        width: 100%;
+    }
+}
+@keyframes agrandar-logo {
+    0%{
+        left: 25%;
+        bottom: 25%;
+        width: 50%;
+    }
+    25%{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        filter: invert();
+    }
+    50%{
+        left: 25%;
+        bottom: 25%;
+        width: 50%;
+        filter: invert();
+    }
+    75%{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    100%{
+        left: 25%;
+        bottom: 25%;
+        width: 50%;
+    }
+}
+
+@media (max-aspect-ratio: 1.90/1) {
+    .contenedor_Fondo{
+        height: 100%;
+        width: fit-content;
+    }
+
+}
+
+@media (min-aspect-ratio: 1.90/1) {
+    .contenedor_Fondo{
+        width: 100%;
+        height: fit-content;
+    }
+
+}
+
+@media (max-aspect-ratio: 2) {
+    .contenedor_Fondo_Logo{
+        position: fixed;
+        width: 100vw;
+        margin: 0;
+    }
+}
+
+@media (max-aspect-ratio: 1) {
+    .contenedor_Fondo_Logo{
+        position: fixed;
+        width: 100vw;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 700px){
+    .menu{
+        display: none;
+    }
+    .menu_Responsive{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    .menu_Barra_Responsive{
+        position: absolute;
+        display: block;
+        margin: 0;
+        width: 100vw;
+        height: 70px;
+        z-index: 30;
+        overflow: hidden;
+    }
+    .menu_Logo_Responsive{
+        position: absolute;
+        top: 0;
+        height: 70px;
+        z-index: 50;
+    }
+    .menu_Barra_Deco_Responsive{
+        position: absolute;
+        left: 145px;
+        margin: 0;
+        height: 70px;
+        z-index: 30;
+        animation-name: deslizar-barra-responsive;
+        animation-duration:12s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes deslizar-barra-responsive {
+        0%{
+            left: 0vw;
+            top: 0px;
+            height: 70px;
+            filter: blur(5px);
+        }
+        12.5%{
+            left: -100vw;
+            filter: blur(5px);
+            top: 0px;
+            height: 70px;
+        }
+        25%{
+            top:0px;
+            height: 70px;
+            left: -0vw;
+            filter: blur(5px);
+        }
+        37.5%{
+            left: -100vw;
+            filter: blur(5px);
+            top: 0px;
+            height: 70px;
+        }
+        50%{
+            left: 0vw;
+            top: 0px;
+            height: 70px;
+            filter: blur(5px);
+        }
+        62.5%{
+            left: -100vw;
+            top: 0px;
+            height: 70px;
+            filter: blur(5px);
+        }
+        75%{
+            left: 0;
+            top: 0px;
+            height: 70px;
+            filter: blur(5px);
+        }
+        87.5%{
+            left: -100vw;
+            top:0px;
+            height: 70px;
+            filter: blur(5px);
+        }
+        100%{
+            left: 0;
+            top: 0px;
+            height: 70px;
+            filter: blur(5px);
+        }
+    }
+
+    .menu_Indice_Bg_Indice_Responsive{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: brown;
+    }
+    .menu_Titulo_Responsive{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 140px;
+        margin: 0;
+        font-size: 50px;
+        width: 500px;
+        color: whitesmoke;
+        font-family: 'Pattaya', sans-serif;
+        -webkit-text-stroke: 2px gray;
+        z-index: 20;
+        animation-name: deslizar-texto-responsive;
+        animation-duration:12s;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes deslizar-texto-responsive {
+        0%{
+            left: -430px;
+        }
+        50%{
+            left: 100vw;
+        }
+        100%{
+            left: -430px;
+        }
+    }
+
+    .menu_Indice_Iconos_Responsive{
+        position: absolute;
+        margin: 0;
+        width: 50px;
+        padding-top: 10px;
+        top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        z-index: 100;
+        left: calc(100vw - 70px);
+    }
+
+    .menu_Indice_Responsive{
+        margin: 0;
+        position: absolute;
+        margin-left: calc(100vw - 210px);
+        top: -200px;
+        z-index: 15;
+        opacity: 0;
+    }
+
+    .menu_Indice_Espacio_Responsive{
+        margin: 0;
+        height: 70px;
+        width: 0;
+        text-align: center;
+        list-style: none;
+    }
+    .menu_Indice_Items_Responsive{
+        font-size: 35px;
+        font-weight: bold;
+        background-color: rgba(100, 0, 0, 0.9);
+        border-style: solid;
+        border-color: whitesmoke;
+        border-radius: 10px;
+        color: whitesmoke;
+        display: block;
+        text-align: center;
+        margin: 0 ;
+        padding: 10px;
+    }
+    .menu_Indice_Responsive{
+
+        transition-property: top;
+        transition-duration: 0.5s;
+
+    }
+
+    .menu_Indice_Iconos_Responsive:hover ~ .menu_Indice_Responsive{
+        top: 0px;
+        opacity: 1;
+    }
+
+    .contenedor_Fondo{
+        position: absolute;
+        height: 100%;
+        z-index: 0;
+        object-fit: cover;
+        top: 0;
+    }
+    .contenedor_Fondo_Logo{
+        position: fixed;
+        width: 100vw;
+        padding: 0;
+        margin: 25% 0;
+        object-fit: cover;
+        top: 25%;
+        bottom: 25%;
+        align-items: center;
+    }
+    .contenedor_Fondo_Logo{
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        animation: agrandar-logo3 8s, cambiar-color 6s infinite;
+        top:25%;
+        bottom: 25%;
+    }
+    @keyframes agrandar-logo3 {
+        0%{
+            left: 37.5%;
+            right: 37.5%;
+            bottom: 37.5%;
+            top: 37.5%;
+            width: 25%;
+        }
+        100%{
+            left: 0;
+            right: 0;
+            top:25%;
+            bottom: 25%;
+            width: 100%;
+        }
+    }
+}
+.contenedor_Posicion{
+    background-color: transparent;
+}
